@@ -1,4 +1,4 @@
-import { Geist, Geist_MonoNoto_Sans_TC } from "next/font/google";
+import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
 
 
