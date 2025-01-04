@@ -2,7 +2,7 @@
 import Image from "next/image"
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { useRouter } from 'next/navigation';
-import { usePageNavigation } from "./contexts/PageContext";
+import { usePageNavigation } from "../contexts/PageContext";
 
 export default function Home() {
  const { goToPage } = usePageNavigation();

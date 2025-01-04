@@ -6,7 +6,7 @@ import { PageProvider, usePageNavigation } from './contexts/PageContext';
 import MyWorks from './slides/myWorks';
 import AboutMe from './slides/aboutMe';
 
-import Home from './page2';
+import Home from './slides/home';
 
 
 const Page = ({ color, children, position }) => (
