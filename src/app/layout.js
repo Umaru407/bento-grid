@@ -1,17 +1,7 @@
-import { Geist, Geist_Mono,Inter,Noto_Sans_TC } from "next/font/google";
+import { Geist, Geist_MonoNoto_Sans_TC } from "next/font/google";
 import "./globals.css";
 
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 // const notoSans = 
 
@@ -24,13 +14,6 @@ const noto_sans_tc = Noto_Sans_TC({
 })
 
 
-const inter = Inter({ 
-  subsets: ['latin','chinese-traditional'],  // 指定字體子集
-  variable: "--font-inter",  // 指定 CSS 變數名稱
-  // 可選配置
-  // weight: ['400', '700'],  // 指定字重
-  // display: 'swap',     // 字體顯示策略
-})
 
 export const metadata = {
   title: "Create Next App",
