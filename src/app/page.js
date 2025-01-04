@@ -3,8 +3,9 @@
 
 import { PageProvider, usePageNavigation } from './contexts/PageContext';
 
-import MyWorks from './pages/myWorks/page';
-import AboutMe from './pages/aboutMe/page';
+import MyWorks from './slides/myWorks';
+import AboutMe from './slides/aboutMe';
+
 import Home from './page2';
 
 

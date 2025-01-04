@@ -157,7 +157,8 @@ export default function MyWorks() {
             </div>
           </div>
 
-          <div className="col-start-1 col-end-4 row-span-2  rounded-3xl px-10 py-6 flex flex-col  group hover:cursor-pointer bg-[#ff5f4e]" onClick={() => { goToPage(1) }}>
+          <div className="col-start-1 col-end-4 row-span-2  rounded-3xl px-10 py-6 flex flex-col 
+           group hover:cursor-pointer bg-[#ff5f4e]" onClick={() => { goToPage(1) }}>
 
             <div className="flex flex-col mt-auto items-start ">
               <h1 className="text text-4xl font-bold mt-auto mb-3">About Me</h1>
