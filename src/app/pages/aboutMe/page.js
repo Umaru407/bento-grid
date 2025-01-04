@@ -37,7 +37,7 @@ export default function AboutMe() {
               <KeyboardDoubleArrowLeftIcon
                 className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
                 style={{
-                  fontSize: 40,
+                  fontSize: 4,
                   animation: 'pulse 1s infinite alternate'
                 }}
               />

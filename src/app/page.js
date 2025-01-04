@@ -1,9 +1,10 @@
 'use client'
-import { useState } from 'react';
-import AboutMe from './pages/aboutMe/page';
+
 
 import { PageProvider, usePageNavigation } from './contexts/PageContext';
+
 import MyWorks from './pages/myWorks/page';
+import AboutMe from './pages/aboutMe/page';
 import Home from './page2';
 
 
