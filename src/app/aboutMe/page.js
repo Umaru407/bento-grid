@@ -7,11 +7,12 @@ import myLocate from "./myLocate.json";
 import adventurer from "./adventurer.json";
 import React, { useRef } from 'react';
 import dynamic from 'next/dynamic';
+import { usePageNavigation } from '../contexts/PageContext';
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false }); // Dynamic import with ssr: false
 
 
-export default function BentoGridPage() {
-
+export default function AboutMe() {
+  const { goToPage } = usePageNavigation();
   const router = useRouter();
   const lottieRef = useRef(null);
   const handleMouseEnter = () => {
@@ -28,7 +29,7 @@ export default function BentoGridPage() {
       <div className="mx-auto p-8 w-screen h-screen overflow-hidden">
         <div className="grid grid-rows-7 grid-cols-12 gap-8 w-full h-full">
           <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#47a2df]" onClick={() => {
-            router.push('/')
+            goToPage(0)
           }} >
 
             <div className="flex flex-col mt-auto">
@@ -119,7 +120,7 @@ export default function BentoGridPage() {
             />
           </div>
           <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#ffc934]" onClick={() => {
-            router.push('/myWorks')
+            goToPage(2)
           }} >
 
             <div className="flex flex-col mt-auto items-end">

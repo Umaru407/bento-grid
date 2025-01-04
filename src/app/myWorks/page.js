@@ -7,10 +7,10 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Typography from '@mui/material/Typography';
 import React, { useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { BorderAllRounded } from "@mui/icons-material";
+
+import { usePageNavigation } from "../contexts/PageContext";
 // import { Typography } from "@mui/material";
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false }); // Dynamic import with ssr: false
 
@@ -27,8 +27,8 @@ const style = {
   boxShadow: 24,
 
 };
-export default function BentoGridPage() {
-
+export default function MyWorks() {
+  const { goToPage } = usePageNavigation();
   const [open, setOpen] = useState(false);
   const [modalImage, setModalImage] = useState(null);
   const handleOpen = (url) => {
@@ -72,7 +72,7 @@ export default function BentoGridPage() {
       <div className="mx-auto p-8 w-screen h-screen overflow-hidden">
         <div className="grid grid-rows-7 grid-cols-12 gap-8 w-full h-full">
           <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#47a2df]" onClick={() => {
-            router.push('/')
+            goToPage(0)
           }} >
 
             <div className="flex flex-col mt-auto">
@@ -140,25 +140,6 @@ export default function BentoGridPage() {
               <p className="text-white text-xl">海報設計</p>
             </div>
           </div>
-
-
-          <div
-            className="relative group row-span-2 col-span-3 defaultItemBackgrond rounded-3xl overflow-hidden hover:cursor-pointer"
-            onClick={() => { handleOpen('/ncueim.svg'); }}
-          >
-            <Image
-              src={'/ncueim.svg'}
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="object-cover h-full w-full"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h2 className="text-white text-3xl ">寶山校門</h2>
-              <p className="text-white text-xl">名片設計</p>
-            </div>
-          </div>
-
           <div
             className="relative group row-span-3 col-span-3 defaultItemBackgrond rounded-3xl overflow-hidden hover:cursor-pointer"
             onClick={() => { handleOpen('/lineart.png'); }}
@@ -176,8 +157,25 @@ export default function BentoGridPage() {
             </div>
           </div>
 
+          <div className="col-start-1 col-end-4 row-span-2  rounded-3xl px-10 py-6 flex flex-col  group hover:cursor-pointer bg-[#ff5f4e]" onClick={() => { goToPage(1) }}>
+
+            <div className="flex flex-col mt-auto items-start ">
+              <h1 className="text text-4xl font-bold mt-auto mb-3">About Me</h1>
+              <KeyboardDoubleArrowLeftIcon
+                className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
+                style={{
+                  fontSize: 40,
+                  animation: 'pulse 1s infinite alternate'
+                }}
+              />
+            </div>
+          </div>
+
+
+
+
           <div
-            className="relative group row-span-3 col-span-2 defaultItemBackgrond rounded-3xl overflow-hidden hover:cursor-pointer"
+            className="relative group col-start-4 row-start-5 row-span-3 col-span-2 defaultItemBackgrond rounded-3xl overflow-hidden hover:cursor-pointer"
             onClick={() => { handleOpen('/textart2.png'); }}
           >
             <Image
@@ -194,7 +192,7 @@ export default function BentoGridPage() {
           </div>
 
           <div
-            className="relative group row-span-3 col-span-4 defaultItemBackgrond rounded-3xl overflow-hidden hover:cursor-pointer"
+            className="relative group col-start-6 row-start-5 row-span-3 col-span-4 defaultItemBackgrond rounded-3xl overflow-hidden hover:cursor-pointer"
             onClick={() => { handleOpen('/post1.png'); }}
           >
             <Image
@@ -211,19 +209,20 @@ export default function BentoGridPage() {
           </div>
 
 
-          <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#ff5f4e]" onClick={() => {
-            router.push('/aboutMe')
-          }} >
-
-            <div className="flex flex-col mt-auto items-end">
-              <h1 className="text text-4xl font-bold mt-auto mb-3">About Me</h1>
-              <KeyboardDoubleArrowRightIcon
-                className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
-                style={{
-                  fontSize: 40,
-                  animation: 'pulse 1s infinite alternate'
-                }}
-              />
+          <div
+            className="relative group row-span-2 col-span-3 defaultItemBackgrond rounded-3xl overflow-hidden hover:cursor-pointer"
+            onClick={() => { handleOpen('/ncueim.svg'); }}
+          >
+            <Image
+              src={'/ncueim.svg'}
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="object-cover h-full w-full"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h2 className="text-white text-3xl ">寶山校門</h2>
+              <p className="text-white text-xl">名片設計</p>
             </div>
           </div>
 
