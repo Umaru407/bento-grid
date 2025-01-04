@@ -3,10 +3,12 @@ import Image from "next/image"
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { useRouter } from 'next/navigation';
-import Lottie from "lottie-react";
 import myLocate from "./myLocate.json";
 import adventurer from "./adventurer.json";
 import React, { useRef } from 'react';
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false }); // Dynamic import with ssr: false
+
 
 export default function BentoGridPage() {
 
@@ -20,13 +22,6 @@ export default function BentoGridPage() {
     lottieRef.current.stop(); // 當滑鼠離開時停止動畫
   };
 
-
-  // const options = {
-  //   animationData: myLocate,
-  //   loop: true
-  // };
-
-  // const { myLocate } = useLottie(options);
 
   return (
     <>
@@ -71,9 +66,6 @@ export default function BentoGridPage() {
 
             </div>
 
-
-            {/* <h1 className="text text-4xl font-bold mt-auto mb-3 text-center">ISFP</h1>
-            <Lottie animationData={adventurer} lottieRef={lottieRef} autoPlay={false} style={{ width: '100%', height: '100%' }} /> */}
           </div>
 
 
