@@ -119,7 +119,7 @@ export default function BentoGridPage() {
             />
           </div>
           <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#ffc934]" onClick={() => {
-            router.push('/')
+            router.push('/myWorks')
           }} >
 
             <div className="flex flex-col mt-auto items-end">
