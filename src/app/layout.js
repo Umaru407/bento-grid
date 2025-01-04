@@ -1,5 +1,6 @@
 import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
+import { PageProvider } from "./contexts/PageContext";
 
 
 

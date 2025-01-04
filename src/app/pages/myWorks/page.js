@@ -10,7 +10,7 @@ import Fade from '@mui/material/Fade';
 import React, { useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import { usePageNavigation } from "../contexts/PageContext";
+import { usePageNavigation } from "../../contexts/PageContext";
 // import { Typography } from "@mui/material";
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false }); // Dynamic import with ssr: false
 

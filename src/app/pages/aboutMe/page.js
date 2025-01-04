@@ -7,7 +7,7 @@ import myLocate from "./myLocate.json";
 import adventurer from "./adventurer.json";
 import React, { useRef } from 'react';
 import dynamic from 'next/dynamic';
-import { usePageNavigation } from '../contexts/PageContext';
+import { usePageNavigation } from '../../contexts/PageContext';
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false }); // Dynamic import with ssr: false
 
 
