@@ -75,7 +75,7 @@ export default function BentoGridPage() {
           </div>
           <div className="row-span-3 col-span-6 rounded-3xl px-10 py-6 defaultItemBackgrond flex flex-col items-center" >
             <div className="mb-4 grow h-full">
-              <Image src={'/Logo.svg'} width={32} height={32} alt="Logo" className="object-contain h-full w-min" />
+              <Image src={'/logo.svg'} width={32} height={32} alt="Logo" className="object-contain h-full w-min" />
             </div>
             <h2 className="text text-4xl font-bold mb-4 text-center">Shang-Feng Yu</h2>
 
