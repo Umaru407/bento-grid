@@ -6,7 +6,7 @@ import "./globals.css";
 // const notoSans = 
 
 const noto_sans_tc = Noto_Sans_TC({ 
-  subsets: ['latin','chinese-traditional'],  // 指定字體子集
+  subsets: ['latin'],  // 指定字體子集
   variable: "--font-noto_sans_tc",  // 指定 CSS 變數名稱
   // 可選配置
   // weight: ['400', '700'],  // 指定字重
