@@ -25,3 +25,8 @@ body {
 .defaultItemBackgrond {
   background-color: var(--defaultItemBackgrond);
 }
+
+:focus-visible {
+  outline: none;
+  
+}

@@ -27,7 +27,7 @@ export default function BentoGridPage() {
     <>
       <div className="mx-auto p-8 w-screen h-screen overflow-hidden">
         <div className="grid grid-rows-7 grid-cols-12 gap-8 w-full h-full">
-          <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#ff5f4e]" onClick={() => {
+          <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#47a2df]" onClick={() => {
             router.push('/')
           }} >
 
