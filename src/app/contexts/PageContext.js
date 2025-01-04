@@ -26,8 +26,8 @@ export const PageProvider = ({ children, totalPages }) => {
 
 export const usePageNavigation = () => {
   const context = useContext(PageContext);
-  if (!context) {
-    throw new Error('usePageNavigation must be used within a PageProvider');
-  }
+  // if (!context) {
+  //   throw new Error('usePageNavigation must be used within a PageProvider');
+  // }
   return context;
 };
