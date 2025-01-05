@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="mx-auto px-16 py-12 w-screen h-screen overflow-hidden">
-        <div className="grid grid-rows-7 grid-cols-12 gap-4 w-full h-full lg:gap-6">
+        <div className="grid grid-rows-7 grid-cols-12 gap-5 w-full h-full lg:gap-7">
           <div className="row-span-3 col-span-9  rounded-3xl px-16 py-10 bg-[#47a2df]">
             <h1 className="text-6xl font-bold mb-8 lg:text-8xl">視覺語言設計</h1>
             <h2 className="text-4xl font-bold lg:text-6xl">BentoGrid</h2>
@@ -38,7 +38,7 @@ export default function Home() {
               goToPage(1)
             }}
           >
-            <h1 className="text-6xl font-bold  text-white lg:text-8xl">About me</h1>
+            <h1 className="text-6xl font-bold  text-white lg:text-8xl">About Me</h1>
             <div className="flex justify-end mt-auto">
               <KeyboardArrowRightIcon
                 className="border-transparent rounded-full border-3 group-hover:border-white group-hover:border-4 transition-all duration-200 ease-in-out text-white"
@@ -76,7 +76,7 @@ export default function Home() {
             transform: scale(1);
         }
         50% {
-            transform: scale(1.3);
+            transform: scale(1.45);
         }
         100% {
             transform: scale(1);

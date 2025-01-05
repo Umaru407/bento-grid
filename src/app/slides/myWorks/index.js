@@ -82,7 +82,7 @@ export default function MyWorks() {
                 className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
                 style={{
                   fontSize: 40,
-                  animation: 'pulse 1s infinite alternate'
+                  animation: 'pulse2 1s infinite alternate'
                 }}
               />
             </div>
@@ -167,7 +167,7 @@ export default function MyWorks() {
                 className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
                 style={{
                   fontSize: 40,
-                  animation: 'pulse 1s infinite alternate'
+                  animation: 'pulse2 1s infinite alternate'
                 }}
               />
             </div>
@@ -227,10 +227,8 @@ export default function MyWorks() {
               <p className="text-white text-xl">名片設計</p>
             </div>
           </div>
-
-
-
-        </div></div>
+        </div>
+      </div>
 
 
 

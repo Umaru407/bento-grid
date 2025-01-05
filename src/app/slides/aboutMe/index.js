@@ -53,7 +53,7 @@ export default function AboutMe() {
                 className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
                 style={{
                   fontSize: 40,
-                  animation: 'pulse 1s infinite alternate'
+                  animation: 'pulse2 1s infinite alternate'
                 }}
               />
             </div>
@@ -162,19 +162,19 @@ export default function AboutMe() {
                 className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
                 style={{
                   fontSize: 40,
-                  animation: 'pulse 1s infinite alternate'
+                  animation: 'pulse2 1s infinite alternate'
                 }}
               />
             </div>
           </div>
         </div>
       </div>  <style jsx>{`
-    @keyframes pulse {
+    @keyframes pulse2 {
         0% {
             transform: scale(1);
         }
         50% {
-            transform: scale(1.1);
+            transform: scale(1.2);
         }
         100% {
             transform: scale(1);
