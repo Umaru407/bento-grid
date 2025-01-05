@@ -11,7 +11,7 @@ import Home from './slides/home';
 
 const Page = ({ color, children, position }) => (
     <div
-        className={`absolute w-screen h-screen flex items-center justify-center transition-transform duration-500 ease-in-out`}
+        className={`absolute  flex items-center justify-center transition-transform duration-500 ease-in-out`}
         style={{ transform: `translateX(${position}%)` }}
     >
         {children}

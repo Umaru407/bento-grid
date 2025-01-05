@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image"
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { useRouter } from 'next/navigation';
 import Backdrop from '@mui/material/Backdrop';
@@ -71,7 +72,7 @@ export default function MyWorks() {
       </Modal>
       <div className="mx-auto p-8 w-screen h-screen overflow-hidden">
         <div className="grid grid-rows-7 grid-cols-12 gap-8 w-full h-full">
-          <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#47a2df]" onClick={() => {
+          <div className="row-span-2 col-span-3 rounded-3xl px-10 py-6 flex flex-col justify-end group hover:cursor-pointer bg-[#47a2df] hover:bg-[#3694d3] transition-all duration-300 ease-in-out hover:transform hover:scale-105 hover:shadow-xl hover:shadow-[#3694d3]/35" onClick={() => {
             goToPage(0)
           }} >
 
@@ -158,11 +159,11 @@ export default function MyWorks() {
           </div>
 
           <div className="col-start-1 col-end-4 row-span-2  rounded-3xl px-10 py-6 flex flex-col 
-           group hover:cursor-pointer bg-[#ff5f4e]" onClick={() => { goToPage(1) }}>
+           group hover:cursor-pointer bg-[#FF7262] hover:bg-[#fc614f] transition-all duration-300 ease-in-out hover:transform hover:scale-105 hover:shadow-xl hover:shadow-[#fc614f]/35" onClick={() => { goToPage(1) }}>
 
             <div className="flex flex-col mt-auto items-start ">
               <h1 className="text text-4xl font-bold mt-auto mb-3">About Me</h1>
-              <KeyboardDoubleArrowLeftIcon
+              <KeyboardArrowLeftIcon
                 className="border-transparent rounded-full border-2 group-hover:border-white group-hover:border-2 transition-all duration-200 ease-in-out"
                 style={{
                   fontSize: 40,

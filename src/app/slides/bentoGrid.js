@@ -48,7 +48,7 @@ export default function BentoGridPage() {
                         </div>
                     </div>
 
-                    <div className="row-span-4 col-span-6 rounded-3xl px-16 py-10 flex flex-col justify-between group hover:cursor-pointer bg-[#ffc934]" >
+                    <div className="row-span-4 col-span-6 rounded-3xl px-16 py-10 flex flex-col justify-between group hover:cursor-pointer bg-[#ffc934] hover:bg-[#ffae34] transition-all duration-300 ease-in-out hover:transform hover:scale-105 hover:shadow-xl hover:shadow-[#ffae34]/35" >
                         <h1 className="text-8xl font-bold mb-8">My Works</h1>
                         <div className="flex justify-end mt-auto">
 

@@ -22,8 +22,31 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+.locateBackgrond{
+  background-color: #91D3FF;
+  transition: all 300ms ease-in-out;
+  border: 2px solid transparent;
+}
+
+.locateBackgrond:hover {
+  background-color: #69c3ff;
+  transform: scale(1.03);
+  box-shadow: 0 16px 20px -5px rgba(105, 195, 255, 0.35);
+  border: 2px solid #e9e7e7;
+}
+
 .defaultItemBackgrond {
   background-color: var(--defaultItemBackgrond);
+  
+  transition: all 300ms ease-in-out;
+  border: 2px solid transparent;
+}
+
+.defaultItemBackgrond:hover {
+  background-color: #292929;
+  transform: scale(1.03);
+  box-shadow: 0 16px 20px -5px rgba(119, 119, 119, 0.35);
+  border: 2px solid #e9e7e7;
 }
 
 :focus-visible {
