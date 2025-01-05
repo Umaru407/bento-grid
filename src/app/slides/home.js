@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <>
       <div className="mx-auto px-16 py-12 w-screen h-screen overflow-hidden">
-        <div className="grid grid-rows-7 grid-cols-12 gap-8 w-full h-full">
+        <div className="grid grid-rows-7 grid-cols-12 gap-4 w-full h-full lg:gap-6">
           <div className="row-span-3 col-span-9  rounded-3xl px-16 py-10 bg-[#47a2df]">
-            <h1 className="text-8xl font-bold mb-8">視覺語言設計</h1>
-            <h2 className="text-6xl font-bold">BentoGrid</h2>
+            <h1 className="text-6xl font-bold mb-8 lg:text-8xl">視覺語言設計</h1>
+            <h2 className="text-4xl font-bold lg:text-6xl">BentoGrid</h2>
           </div>
-          <div className="row-span-3 col-span-3 defaultItemBackgrond rounded-3xl px-16 py-10 grid grid-cols-2 grid-rows-2 gap-4"  >
+          <div className="row-span-3 col-span-3 defaultItemBackgrond rounded-3xl grid grid-cols-2 grid-rows-2 gap-1 md:gap-2 md:px-10 md:py-8 lg:px-12 lg:py-10"  >
             <div className="w-full h-full">
               <Image src={'/chocolate.svg'} width={32} height={32} alt="foods" className="object-contain w-full h-full" />
             </div>
@@ -38,7 +38,7 @@ export default function Home() {
               goToPage(1)
             }}
           >
-            <h1 className="text-8xl font-bold mb-8 text-white">About me</h1>
+            <h1 className="text-6xl font-bold  text-white lg:text-8xl">About me</h1>
             <div className="flex justify-end mt-auto">
               <KeyboardArrowRightIcon
                 className="border-transparent rounded-full border-3 group-hover:border-white group-hover:border-4 transition-all duration-200 ease-in-out text-white"
@@ -53,7 +53,7 @@ export default function Home() {
           <div className="row-span-4 col-span-6 rounded-3xl px-16 py-10 flex flex-col justify-between group hover:cursor-pointer bg-[#ffc934] hover:bg-[#ffae34] transition-all duration-300 ease-in-out hover:transform hover:scale-105 hover:shadow-xl hover:shadow-[#ffae34]/35" onClick={() => {
             goToPage(2)
           }} >
-            <h1 className="text-8xl font-bold mb-8">My Works</h1>
+            <h1 className="text-6xl font-bold  text-white lg:text-8xl">My Works</h1>
             <div className="flex justify-end mt-auto">
 
               <KeyboardDoubleArrowRightIcon
