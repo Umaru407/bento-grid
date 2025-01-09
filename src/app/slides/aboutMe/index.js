@@ -92,15 +92,20 @@ export default function AboutMe() {
             <Lottie animationData={myLocate} loop={true} style={{ width: '100%', height: '100%' }} />
           </div>
 
+
+
           <div className="row-span-3 col-span-6 rounded-3xl px-10 py-6 defaultItemBackgrond flex flex-col items-center" onMouseEnter={handleMouseEnter2}
             onMouseLeave={handleMouseLeave2}>
             <div className="grow mb-2 h-3/5">
               <Lottie animationData={logo} lottieRef={lottieRef2} autoplay={false} loop={false} style={{ objectFit: 'contain' ,height:'100%'}} />
-              {/* <Image src={'/logo.svg'} width={32} height={32} alt="Logo" className="object-contain h-full w-min" /> */}
+             
             </div>
             <h2 className="text text-3xl font-bold mb-2 text-center lg-4xl">Shang-Feng Yu</h2>
 
           </div>
+
+
+
           <div
             className="row-span-2 col-span-3 rounded-3xl px-10 py-6 defaultItemBackgrond flex items-center justify-center group overflow-hidden hover:cursor-pointer"
             onClick={() => {
